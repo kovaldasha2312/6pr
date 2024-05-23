@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavd3</title>
+</head>
+
+<body>
+    <div></div>
+    <button><a href="index.html">Main menu</a></button>
+    <h1>Хто сказав му-му?</h1>
+    <select id="animalSelect">
+        <option value="0">Виберіть відповідь</option>
+        <option value="1">Кішка</option>
+        <option value="2">Корова</option>
+        <option value="3">Пташка</option>
+    </select>
+    <button onclick="check()">Перевірити</button>
+    <script>
+        function check() {
+            const selectElement = document.getElementById('animalSelect');
+            const selectedValue = selectElement.value;
+            if (selectedValue == 2) {
+                alert("Правильна відповідь");
+            } else {
+                alert("Неправильна відповідь");
+            }
+        }
+    </script>
+</body>
+
+</html>

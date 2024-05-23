@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavd4</title>
+</head>
+<body>
+    <button><a href="index.html">Main menu</a></button>
+    <form action="user.html" target="_blank"
+    style="display: flex; flex-direction: column; width: 25%; margin: auto; text-align: center;">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <button style="margin-top: 5%;" onclick="savedata()" type="submit">Sign up</button>
+    </form>
+    <script>
+        function savedata() {
+            let email = document.getElementById("email").value;
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value
+            alert("Дякую " + username + "! Ваша пошта: " + email + " та пароль: " + password + " були відправлені!");
+        }
+    </script>
+</body>
+</html>

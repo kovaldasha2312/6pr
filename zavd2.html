@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="ua">
+  <title>Тестування логічних елементів</title>
+  <script src="main.js"></script>
+  <meta HTTP-EQUIV = "Content-Type" CONTENT = "text/html; CHARSET = windows-1251">
+</head>
+<body>
+  <h1>Тестування логічних елементів</h1>
+  
+  <form>
+    <p>Оберіть логічну операцію:</p>
+    <input type="radio" id="and" name="operation" value="AND" checked>
+    <label for="and">Логічне І (AND)</label><br>
+    <input type="radio" id="not" name="operation" value="NOT">
+    <label for="or">Логічне НЕ (NOT)</label><br>
+    
+    <p>Виберіть значення для вмикача:</p>
+    <input type="checkbox" id="inputCheckbox">
+    <label for="inputCheckbox">Вмикач</label><br>
+    
+    <p>Натисніть кнопку, щоб перевірити відповідь:</p>
+    <button type="button" onclick="checkAnswer()">Перевірити</button>
+  </form>
+</body>
+</html>
